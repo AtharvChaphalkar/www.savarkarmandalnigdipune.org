@@ -1,52 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 2em;
-    text-align: center;
-}
-
-.gallery {
+.background {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    margin: 10px;
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
+    align-items: center;
+    color: white;
     text-align: center;
-    padding: 1em 0;
 }
+
+.content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
