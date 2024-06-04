@@ -7,82 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>स्वातंत्र्यवीर सावरकर मंडळ</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#about">आमच्याबद्दल</a></li>
-            <li><a href="#projects">आमचे प्रकल्प</a></li>
-            <li><a href="#departments">आमचे विभाग</a></li>
-            <li><a href="#contact">संपर्क साधा</a></li>
-        </ul>
-    </nav>
-    <section id="slideshow">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="C:\Users\Atharv Chaphalkar\Downloads\SS ph.jpg" alt="Image 1">
+        <div class="slideshow">
+            <div class="slides fade">
+                <img src="image1.jpg" style="width:100%">
             </div>
-            <div class="mySlides fade">
-                <img src="C:\Users\Atharv Chaphalkar\Downloads\ph3.jpg" alt="Image 2">
+            <div class="slides fade">
+                <img src="image2.jpg" style="width:100%">
             </div>
-            <div class="mySlides fade">
-                <img src="C:\Users\Atharv Chaphalkar\Downloads\SS ph2.jpg" alt="Image 3">
+            <div class="slides fade">
+                <img src="image3.jpg" style="width:100%">
             </div>
         </div>
-    </section>
-    <section id="about">
+        <div class="content">
+            <div class="section" onclick="navigateTo('about')">आमच्याबद्दल</div>
+            <div class="section" onclick="navigateTo('projects')">आमचे प्रकल्प</div>
+            <div class="section" onclick="navigateTo('departments')">आमचे विभाग</div>
+            <div class="section" onclick="navigateTo('contact')">संपर्क साधा</div>
+        </div>
+    </div>
+
+    <div id="about" class="info-section">
         <h2>आमच्याबद्दल</h2>
-        <p>NGO बद्दल सामान्य माहिती...</p>
-    </section>
-    <section id="projects">
+        <p>NGO's general information here.</p>
+    </div>
+
+    <div id="projects" class="info-section">
         <h2>आमचे प्रकल्प</h2>
-        <div class="sub-section">
-            <h3>प्रकल्प 1</h3>
-            <p>प्रकल्प 1 बद्दल माहिती...</p>
-        </div>
-        <div class="sub-section">
-            <h3>प्रकल्प 2</h3>
-            <p>प्रकल्प 2 बद्दल माहिती...</p>
-        </div>
-        <div class="sub-section">
-            <h3>प्रकल्प 3</h3>
-            <p>प्रकल्प 3 बद्दल माहिती...</p>
-        </div>
-        <div class="sub-section">
-            <h3>प्रकल्प 4</h3>
-            <p>प्रकल्प 4 बद्दल माहिती...</p>
-        </div>
-    </section>
-    <section id="departments">
+        <div class="sub-section">प्रकल्प 1</div>
+        <div class="sub-section">प्रकल्प 2</div>
+        <div class="sub-section">प्रकल्प 3</div>
+        <div class="sub-section">प्रकल्प 4</div>
+    </div>
+
+    <div id="departments" class="info-section">
         <h2>आमचे विभाग</h2>
-        <div class="sub-section">
-            <h3>विभाग 1</h3>
-            <p>विभाग 1 बद्दल माहिती...</p>
-        </div>
-        <div class="sub-section">
-            <h3>विभाग 2</h3>
-            <p>विभाग 2 बद्दल माहिती...</p>
-        </div>
-        <div class="sub-section">
-            <h3>विभाग 3</h3>
-            <p>विभाग 3 बद्दल माहिती...</p>
-        </div>
-        <div class="sub-section">
-            <h3>विभाग 4</h3>
-            <p>विभाग 4 बद्दल माहिती...</p>
-        </div>
-    </section>
-    <section id="contact">
+        <div class="sub-section">विभाग 1</div>
+        <div class="sub-section">विभाग 2</div>
+        <div class="sub-section">विभाग 3</div>
+        <div class="sub-section">विभाग 4</div>
+    </div>
+
+    <div id="contact" class="info-section">
         <h2>संपर्क साधा</h2>
-        <p>संपर्क क्रमांक: 1234567890</p>
-    </section>
-    <script src="scripts.js"></script>
+        <p>Contact Number: 123-456-7890</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
-
-    
-         
-
-
+      
