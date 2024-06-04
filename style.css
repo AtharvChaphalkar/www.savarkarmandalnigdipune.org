@@ -1,59 +1,31 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    border: 5px solid orange;
-}
-
-h1 {
-    color: orange;
-    margin-bottom: 50px;
-}
-
-.slideshow {
-    width: 50%;
-    margin: 0 auto;
+.slideshow-container {
     position: relative;
+    max-width: 100%;
+    margin: auto;
 }
 
-.slides {
+.mySlides {
     display: none;
 }
 
-.slides img {
+.mySlides img {
     width: 100%;
     height: auto;
 }
 
-.content {
-    margin-top: 50px;
+@keyframes fade {
+    from { opacity: 0.4 } 
+    to { opacity: 1 }
 }
 
-.section {
-    margin: 20px 0;
-    cursor: pointer;
+.mySlides {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
-.info-section {
-    display: none;
-    text-align: center;
-    padding: 20px;
-}
-
-.sub-section {
-    margin: 10px 0;
-}
-
-.active {
-    display: block;
+.nav-links a:hover {
+    background-color: white;
+    color: black;
 }
 
 
