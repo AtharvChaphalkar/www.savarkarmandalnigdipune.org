@@ -6,56 +6,84 @@
     <title>स्वातंत्र्यवीर सावरकर मंडळ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <h1>स्वातंत्र्यवीर सावरकर मंडळ</h1>
-        <div class="slideshow">
-            <div class="slides fade">
-                <img src="image1.jpg" style="width:100%">
+<body style="background-color: black; color: white; text-align: center; font-family: 'Arial', sans-serif; margin: 0; padding: 0;">
+    <header>
+        <h1 style="color: orange; margin: 20px 0;">स्वातंत्र्यवीर सावरकर मंडळ</h1>
+    </header>
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="C:\Users\Atharv Chaphalkar\Downloads\SS ph.jpg" alt="Slide 1">
             </div>
-            <div class="slides fade">
-                <img src="image2.jpg" style="width:100%">
+            <div class="mySlides">
+                <img src="C:\Users\Atharv Chaphalkar\Downloads\ph3.jpg" alt="Slide 2">
             </div>
-            <div class="slides fade">
-                <img src="image3.jpg" style="width:100%">
+            <div class="mySlides">
+                <img src="C:\Users\Atharv Chaphalkar\Downloads\SS ph2.jpg" alt="Slide 3">
             </div>
         </div>
-        <div class="content">
-            <div class="section" onclick="navigateTo('about')">आमच्याबद्दल</div>
-            <div class="section" onclick="navigateTo('projects')">आमचे प्रकल्प</div>
-            <div class="section" onclick="navigateTo('departments')">आमचे विभाग</div>
-            <div class="section" onclick="navigateTo('contact')">संपर्क साधा</div>
-        </div>
-    </div>
 
-    <div id="about" class="info-section">
-        <h2>आमच्याबद्दल</h2>
-        <p>NGO's general information here.</p>
-    </div>
+        <nav style="margin: 20px 0;">
+            <ul class="nav-links" style="list-style: none; padding: 0;">
+                <li style="display: inline; margin: 0 15px;"><a href="#about" style="color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; border-radius: 5px;">आमच्याबद्दल</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="#projects" style="color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; border-radius: 5px;">आमचे प्रकल्प</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="#departments" style="color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; border-radius: 5px;">आमचे विभाग</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="#contact" style="color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; border-radius: 5px;">संपर्क साधा</a></li>
+            </ul>
+        </nav>
 
-    <div id="projects" class="info-section">
-        <h2>आमचे प्रकल्प</h2>
-        <div class="sub-section">प्रकल्प 1</div>
-        <div class="sub-section">प्रकल्प 2</div>
-        <div class="sub-section">प्रकल्प 3</div>
-        <div class="sub-section">प्रकल्प 4</div>
-    </div>
+        <section id="about" style="margin: 50px 0;">
+            <h2>आमच्याबद्दल</h2>
+            <p>Here you can provide general information about the NGO.</p>
+        </section>
 
-    <div id="departments" class="info-section">
-        <h2>आमचे विभाग</h2>
-        <div class="sub-section">विभाग 1</div>
-        <div class="sub-section">विभाग 2</div>
-        <div class="sub-section">विभाग 3</div>
-        <div class="sub-section">विभाग 4</div>
-    </div>
+        <section id="projects" style="margin: 50px 0;">
+            <h2>आमचे प्रकल्प</h2>
+            <div class="project" style="margin: 20px 0;">
+                <h3>प्रकल्प 1</h3>
+                <p>Details about project 1.</p>
+            </div>
+            <div class="project" style="margin: 20px 0;">
+                <h3>प्रकल्प 2</h3>
+                <p>Details about project 2.</p>
+            </div>
+            <div class="project" style="margin: 20px 0;">
+                <h3>प्रकल्प 3</h3>
+                <p>Details about project 3.</p>
+            </div>
+            <div class="project" style="margin: 20px 0;">
+                <h3>प्रकल्प 4</h3>
+                <p>Details about project 4.</p>
+            </div>
+        </section>
 
-    <div id="contact" class="info-section">
-        <h2>संपर्क साधा</h2>
-        <p>Contact Number: 123-456-7890</p>
-    </div>
+        <section id="departments" style="margin: 50px 0;">
+            <h2>आमचे विभाग</h2>
+            <div class="department" style="margin: 20px 0;">
+                <h3>विभाग 1</h3>
+                <p>Details about department 1.</p>
+            </div>
+            <div class="department" style="margin: 20px 0;">
+                <h3>विभाग 2</h3>
+                <p>Details about department 2.</p>
+            </div>
+            <div class="department" style="margin: 20px 0;">
+                <h3>विभाग 3</h3>
+                <p>Details about department 3.</p>
+            </div>
+            <div class="department" style="margin: 20px 0;">
+                <h3>विभाग 4</h3>
+                <p>Details about department 4.</p>
+            </div>
+        </section>
 
+        <section id="contact" style="margin: 50px 0;">
+            <h2>संपर्क साधा</h2>
+            <p>Contact Number: 1234567890</p>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
 
-      
+     
