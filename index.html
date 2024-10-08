@@ -1,89 +1,536 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
+    <style>
+        h1 {
+          font-size: 80px;
+        }
+        p{
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 30px;       
+
+        }
+        h3 {
+            font-size: 40px;
+
+        }
+        </style>
+        <style>
+            h3 {
+              text-decoration: underline;
+              -webkit-text-decoration-color: orange; /* Safari */  
+              text-decoration-color: orange;
+            }
+            </style>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            div.scroll-container {
+              background-color: orange;
+              overflow: auto;
+              white-space: nowrap;
+              padding: 10px;
+            }
+            
+            div.scroll-container img {
+              padding: 10px;
+            }
+            </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>स्वातंत्र्यवीर सावरकर मंडळ</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Define colors */
+        body {
+            background-image: url(old-paper-texture-1920-x-1080-background-vrb6exnq6fwnrxsd.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: black;
+            text-align: center;
+        }
+        header h1 {
+            color: brown;
+        }
+ 
+body {
+  margin:0;font-family:Arial
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.active {
+  background-color: brown;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 30px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: orange;
+  min-width: 177px;
+  box-shadow: 0px 8px 18px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: brown;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 14px 0;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {
+      margin: 0;
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      background-color: brown;
+    }
+    
+    .header h2 {
+      text-align: center;
+    }
+    
+    .progress-container {
+      width: 100%;
+      height: 8px;
+      background: black;
+    }
+    
+    .progress-bar {
+      height: 8px;
+      background: orange;
+      width: 0%;
+    }
+    
+    .content {
+      padding: 100px 0;
+      margin: 50px auto 0 auto;
+      width: 80%;
+    }
+    </style>
+    <style>
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: orange;
+}
+    </style>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 350px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
 </head>
-<body style="background-color: black; color: white; text-align: center; font-family: 'Arial', sans-serif; margin: 0; padding: 0;">
+<body>
+    <img src="WhatsApp Image 2024-06-04 at 12.54.13_56174401.jpg" alt="WI_img" style="width:100px;height:100px;">
     <header>
-        <h1 style="color: orange; margin: 20px 0;">स्वातंत्र्यवीर सावरकर मंडळ</h1>
+        <h1>स्वातंत्र्यवीर सावरकर मंडळ</h1>
+        <h2 style="color: brown;">-पेठ क्रमांक. 25, निगडी, पुणे 411044 </h2>
     </header>
+    <div class="header">
+        <img src="WhatsApp Image 2024-06-04 at 12.54.13_56174401.jpg" alt="WI_img" style="width:100px;height:100px;">
+          <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>  
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="#about" class="active">आमच्याबद्दल</a>
+        <div class="dropdown">
+          <button class="dropbtn">आमचे प्रकल्प  
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#project1">हरित घोरवडेश्वर प्रकल्प</a>
+            <a href="#project2">गणेश विसर्जन उपक्रम</a>
+            <a href="#project3">किल्ला बनवण्याची स्पर्धा</a>
+            <a href="#project4">किर्लोस्कर वसुंधरा अंतरराष्ट्रीय चित्रपत महोत्सव</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">आमचे विभाग 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#department1">रवींद्रनाथ ठाकूर सार्वजनिक ग्रंथालय</a>
+            <a href="#department2">महिला विभाग</a>
+            <a href="#department3">निसर्गमित्र विभाग</a>
+            <a href="#department4">सांस्कृतिक विभाग</a>
+            <a href="#department5">संकृती संवर्धन आणि विकास महासंघ</a>
+            <a href="#department6">शैक्षणिक विभाग</a>
+          </div>
+        </div>
+        <a href="#our mission" class="active">आमचे ध्येय</a>
+        <a href="#contact" class="active">संपर्क साधा</a>
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
     <main>
+        <div class="content">
         <div class="slideshow-container">
             <div class="mySlides">
-                <img src="C:\Users\Atharv Chaphalkar\Downloads\SS ph.jpg" alt="Slide 1">
+                <img src="banner-08.jpg" alt="Slide 1" style="width:800px;height:500px;">
             </div>
             <div class="mySlides">
-                <img src="C:\Users\Atharv Chaphalkar\Downloads\ph3.jpg" alt="Slide 2">
+                <img src="ph3.jpg" alt="Slide 2" style="width:800px;height:500px;">
             </div>
             <div class="mySlides">
-                <img src="C:\Users\Atharv Chaphalkar\Downloads\SS ph2.jpg" alt="Slide 3">
+                <img src="DSC_6218 (2).JPG" alt="Slide 3" style="width:800px;height:500px;">
             </div>
         </div>
 
-        <nav style="margin: 20px 0;">
-            <ul class="nav-links" style="list-style: none; padding: 0;">
-                <li style="display: inline; margin: 0 15px;"><a href="#about" style="color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; border-radius: 5px;">आमच्याबद्दल</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="#projects" style="color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; border-radius: 5px;">आमचे प्रकल्प</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="#departments" style="color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; border-radius: 5px;">आमचे विभाग</a></li>
-                <li style="display: inline; margin: 0 15px;"><a href="#contact" style="color: white; text-decoration: none; border: 1px solid white; padding: 10px 20px; border-radius: 5px;">संपर्क साधा</a></li>
+        <section id="about">
+            <h3 style="color: orange;">आमच्याबद्दल</h3>
+            <p>पुणे शहरात राहणाऱ्या काही प्रतिष्ठित लोकांच्या गटाने स्वातंत्र्यवीर सावरकर मंडळाची स्थापना केली होती.</p>
+
+
+             <p><mark>नागरिकांमध्ये आपल्या राष्ट्राप्रती प्रेम, कर्तव्य, आपली राष्ट्राप्रती वचनबद्धता आणि निष्ठा वाढवणे हे आमचे उद्दिष्ट आहे.</mark></p>   
+
+                
+            <p>मुलांचे व्यक्तिमत्व निर्माण, महिला विकास, सांस्कृतिक संवर्धन, पर्यावरण संरक्षण इत्यादी क्षेत्रात शिक्षण, प्रशिक्षण आणि प्रेरणा देण्याच्या उद्देशाने प्रकल्प आणि कार्यक्रम राबविण्यास सुरुवात केली.
+
+                
+                संघटनात्मक कार्याची उल्लेखनीय ओळख म्हणून, PCMC (पिंपरी-चिंचवड नगर विकास प्राधिकरण) ने स्वातंत्र्यवीर सावरकर मंडळाला दीर्घकालीन नूतनीकरणीय भाडेतत्त्वावर (long term renewable lease) 27000 चौरस फूट जमीन दिली. या जमिनीवर संस्थेची सध्याची इमारत 2007 मध्ये बांधण्यात आली असून आमच्या नवीन जागेचे उद्घाटन <mark>माननीय पंतप्रधान श्री. नरेंद्र मोदीजीं नी केले</mark></p> 
+        </section>
+
+        <section id="project1">
+            <h3 style="color: orange;">आमचे प्रकल्प</h3>
+            <div class="project1">
+                <h3>हरित घोरवडेश्वर प्रकल्प</h3>
+                <p>हरित घोरवडेश्वर प्रकल्प- हा प्रकल्प विशेषतः देहू रोड पट्टा हिरवागार करण्यासाठी चालवला जातो. पुणे-मुंबई जुन्या महामार्गालगत असलेल्या घोरवडेश्वर डोंगरावर भारतीय जातींची 8000 हून अधिक झाडे लावण्यात आली आहेत. या उपक्रमातील सातत्याचा संपूर्ण पट्टा हिरवा बनविण्यावर मोठा प्रभाव पडला आहे.</p>
+                <img src="WI3.jpg" alt="Project 1" style="width:500px;height:500px;">
+            </div>
+        </section>
+        <section id="project2">   
+            <div class="project2">
+                <h3>गणेश विसर्जन उपक्रम</h3>
+                <p>गणेश विसर्जन उपक्रम-अशा अनोख्या प्रकल्पात पवना नदीकाठची स्वच्छता, त्यानंतर स्वच्छता उपक्रमांचा समावेश होतो
+
+                    गणेशमूर्ती विसर्जन, पर्यावरणपूरक मूर्ती ठेवण्यासाठी जनजागृती. या उपक्रमांमध्ये ५० हून अधिक स्वयंसेवक काम करतात</p>
+            </div>
+        </section>
+        <section id="project3">    
+            <div class="project3">
+                <h3>किल्ला बनवण्याची स्पर्धा</h3>
+                <p>किल्ला बनवण्याची स्पर्धा-दिवाळी सणादरम्यान, लहान मुले आणि तरुणांना आपल्या प्राचीन काळातील प्रतिकृती बनवण्यास प्रवृत्त केले जाते.
+
+                    किल्ले सर्व सहभागी संघांना आवश्यक साहित्य पुरवले जाते आणि अशा किल्ले बनविण्याच्या उपक्रमासाठी स्पर्धा घेतली जाते असा उपक्रम गेल्या 10 वर्षांपासून सुरू आहे आणि दरवर्षी किमान 30 हून अधिक गट अशा उपक्रमात सहभागी होतात.</p>
+            </div>
+        </section>
+        <section id="project4">  
+            <div class="project4">
+                <h3>किर्लोस्कर वसुंधरा अंतरराष्ट्रीय चित्रपत महोत्सव (International Film Festivel)</h3>
+                <p>किर्लोस्कर वसुंधरा अंतरराष्ट्रीय चित्रपत महोत्सव (आंतरराष्ट्रीय चित्रपट महोत्सव) - हा उपक्रम गेल्या दोन वर्षांपासून संस्थेने सुरू केला आहे. नागरिक आणि तरुण विद्यार्थ्यांमध्ये पर्यावरणाविषयी जागरूकता वाढवणे हा या चित्रपट महोत्सवाचा उद्देश आहे.</p>
+            </div>
+        </section>
+
+        <section id="department1">
+            <h3 style="color: orange;">आमचे विभाग</h3>
+            <div class="department1">
+                <h3>1.रवींद्रनाथ ठाकूर सार्वजनिक ग्रंथालय</h3>
+                <p>रवींद्रनाथ टाकूर सार्वजनिक वाचनालय (Ravindranath Thakur Public Library) हे पिंपरी-चिंचवडमधील लहान मुले आणि नागरिकांमध्ये वाचन संस्कृतीचे संवर्धन करण्यासाठी एक उत्तम स्रोत म्हणून उभे राहिले आहे. ग्रंथालयातील ३० हून अधिक विषयांचा समावेश करून आणि पुस्तके आणि वाचन साहित्य मिळवण्याव्यतिरिक्त आमचे काही अनोखे उपक्रम...</p>
+
+                <ul><li><p>ग्रामीण भागात नवीन ग्रंथालये सुरू करण्यासाठी पुस्तक देणगी. आजपर्यंत, संस्थेने ग्रामीण भागात 8 हून अधिक ग्रंथालये सुरू करण्यासाठी रु.3 लाख किमतीची पुस्तके आणि वाचन साहित्य दान केले आहे.</p></li>
+                    <li><p>संस्थेद्वारे वाचकांसाठी आणि संपूर्ण समाजासाठी मोठ्या पुस्तक प्रदर्शनांचे आयोजन केले जाते.</p></li>
+                    <li><p>स्वातंत्र्यवीर सावरकर अभ्यासिका 350 विद्यार्थ्यांची क्षमता असलेली सर्व आधुनिक सुविधा किमान शुल्कात.</p></li></ul>
+                    
+                    <p><mark>नव्याने सुरू करण्यात आलेल्या या प्रकल्पात 400 हून अधिक विद्यार्थ्यांनी सदस्यत्व घेतले आहे.</mark></p>
+            </div>
+            <img src="DSC_6206 (2).JPG" alt="Lib_img" style="width:400px;height:400px;">
+        </section>
+        <section id="department2">
+            <div class="department2">
+                <h3>2.महिला विभाग</h3>
+                <p>महिला विभागाची सुरुवात 1985 मध्ये झाली आणि तेव्हापासून महिला आणि महिलांसाठी विविध विकासात्मक उपक्रम राबवले जात आहेत. महिला विभागाचे काही नियमित उपक्रम खालीलप्रमाणे आहेत...</p>
+
+            <ul><li><p>जवळपासच्या भागातील महिलांसाठी पारंपारिक सण आणि कार्यक्रम साजरे करून संवर्धन हा प्रमुख उपक्रम आहे. सांस्कृतिक स्नेही पद्धतीने सण साजरे करण्यासाठी महिला एकत्र येतात. अशा कार्यक्रमांतून सामाजिक संदेश देणे हे या उत्सवांचे वेगळेपण आहे. दरवर्षी 8 ते 10 हून अधिक सण सामूहिक आणि नाविन्यपूर्ण पद्धतीने साजरे केले जातात.
+                    
+                    ८ मार्च-आंतरराष्ट्रीय महिला दिन स्थापनेपासून साजरा केला जातो. गेल्या 15 वर्षांपासून सातत्याने 2 महिलांचा समाजातील उत्कृष्ट कार्य आणि काही प्रभावी कार्यासाठी यशस्वी जीवन प्रयत्नांसाठी संस्थेतर्फे सत्कार करण्यात येतो. स्त्रिया समाजाचा एक महत्त्वाचा घटक असल्याने, महिलांचे बळकटीकरण हा एक महत्त्वाचा पैलू बनतो आणि विविध सामाजिक-सांस्कृतिक समस्यांना स्पर्श केला जातो आणि महिलांना विविध ज्ञानाचा विस्तार करण्यासाठी चर्चा केली जाते.</p></li>
+                    
+                <li><p>चित्रपट महोत्सव-महिला कल्याण विंग दरवर्षी चित्रपट महोत्सव आयोजित करते. हे चित्रपट प्रामुख्याने सामाजिक-सांस्कृतिक विषयांवर असतात. संबंधित विषयांवर जागरुकता निर्माण करण्याचा आणि महिलांमध्ये संवेदनशीलता निर्माण करण्याचा हा एक सक्रिय प्रयत्न आहे.</p></li>
+                    
+                <li><p>कार्यशाळा आणि प्रशिक्षण - महिलांसाठी पर्यावरणपूरक गणेश मूर्ती बनवणे, दिवाळी कंदील बनवणे यावर कार्यशाळा आयोजित केल्या जातात. अशा कार्यशाळांमध्ये दरवर्षी 500 हून अधिक महिला आणि मुले भाग घेतात. महिला सहभागींसाठी लहान प्रमाणात व्यावसायिक प्रशिक्षण देखील आयोजित केले जाते.</p></li>
+                    
+                <li><p>संस्कार वर्ग (Children Activity Club) - महिला विभागाने ग्रामीण आणि झोपडपट्टी समुदायांमध्ये अशा प्रकारची गरज भासत असे प्रकल्प सुरू केले आहेत. असे संस्कार वर्ग चालवण्यासाठी महिलांच्या पथकाला शास्त्रोक्त पद्धतीने प्रशिक्षण देण्यात आले असून सध्या शहर व परिसरात दोन संस्कार वर्ग चालू आहेत.
+                    
+                    मुलांसाठी निधीची खरी गरज लक्षात घेऊन आणि
+                <li><p>दानपत्र योजना - हा अनोखा उपक्रम 2011 मध्ये सुरू करण्यात आला. जवळच्या भागातील बालकल्याण आणि महिला कल्याण प्रकल्पांसाठी निधीची खरी गरज लक्षात घेऊन, सर्व सदस्यांना दानापत्रात दररोज 1 रुपये टाकून ही रक्कम किमान 365 रुपये जमा करण्याचे आवाहन करण्यात आले आणि महिलाविभाग ज्याचा उपयोग अशा प्रकल्पांना मदत करण्यासाठी केला जाईल. आजपर्यंत 142 महिला दरवर्षी अशा दानापत्राच्या माध्यमातून योगदान देत आहेत. या विद्यार्थ्यांची शैक्षणिक कामगिरी वाढविण्याच्या उद्देशाने दरवर्षी सुमारे 40,000 रुपये जमा करून खेड गटातील आदिवासी मुलांच्या शाळेला दान केले जातात.</p></li></ul>
+            </div>
+            <div class="scroll-container">
+                <img src="Savats Dhenupoojan.JPG" alt="sd_img" width="400" height="400">
+                <img src="IMG-20191227-WA0015.jpg" alt="IMG_img" width="400" height="400">
+                <img src="Maha bhondala.JPG" alt="mb_img" width="400" height="400">
+                <img src="Wat vruksha pujan.JPG" alt="wv_img" width="400" height="400">
+              </div>
+        </section>
+        <section id="department3">     
+            <div class="department3">
+                <h3>3.निसर्गमित्र विभाग</h3>
+                <p>पर्यावरण संवर्धनाच्या उद्देशाने 125 हून अधिक सदस्यांचा समूह सक्रिय आहे आणि पर्यावरणाशी संबंधित विविध उपक्रम आहेत. यामध्ये वृक्षारोपण, नेचर वॉकद्वारे जनजागृती, कचरा व्यवस्थापनाबाबत प्रशिक्षण व माहिती देणे, टेरेस गार्डन्स राखण्यासाठी मार्गदर्शन, पर्यावरणासाठी सायकल रॅली, फिल्म फेस्टिव्हलचे आयोजन आणि निसर्गाशी संबंधित विषयांवर व्याख्याने इत्यादींचा समावेश आहे. विंग तरुणांसोबत काम करत आहे आणि महाराष्ट्रातील जुन्या किल्ल्यांच्या संवर्धनासाठी ट्रेकिंगचे आयोजन करत आहे.</p>
+            </div>
+        </section>
+        <section id="department4">   
+            <div class="department4">
+                <h3>4.सांस्कृतिक विभाग</h3>
+                <p>आपल्या संस्कृतीचे रक्षण करण्यासाठी या मंचाची स्थापना करण्यात आली आहे. आपल्या समाजाच्या कल्याणासाठी काम करण्याच्या खऱ्या उमेदीने संस्थेने पिंपरी-चिंचवडमधील नागरिकांमध्ये मूल्ये, नैतिकता आणि आदर्श यांचे जतन करणारे विविध कार्यक्रम नियमितपणे आयोजित केले. या शाखा अंतर्गत खालील प्रमुख कार्यक्रम आयोजित केले जात आहेत...</p>
+
+                <ul><li><p>छत्रपती शिवाजी व्याख्यानमाला (व्याख्यानमाला) - ही पिंपरी-चिंचवडमधील पहिली व्याख्यानमाला आहे जी गेल्या ३६ वर्षांपासून आयोजित केली जात आहे. हा शहरातील एक अग्रगण्य सामाजिक उपक्रम म्हणून उभा राहिला आहे.<mark>या व्यासपीठावर 175 हून अधिक मान्यवर वक्त्यांनी व्याख्याने दिली आहेत आणि हजारो लोक अशा व्याख्यानमालेत सहभागी झाले आहेत.</mark></p></li>
+                         
+                    <li><p>स्वातंत्र्यवीर सावरकर पुरस्कार - आपल्या समाजासाठी आणि राष्ट्रासाठी अतुलनीय कार्य करणाऱ्या सामाजिक कार्यकर्त्यांना संस्थेतर्फे या पुरस्काराने गौरविण्यात येते. हा पुरस्कार दरवर्षी राष्ट्रीय आणि राज्य स्तरावर सामाजिक विकास कार्य, सेवा कार्य (सेवाकार्य) आणि गरजू आणि पीडित लोकांच्या हिताचे रक्षण करण्यासाठी कठोर परिश्रम घेणाऱ्या भक्तांना दिला जातो. हे त्यांचे प्रयत्न ओळखणे आणि इतरांसाठी प्रेरणा बिंदू म्हणून उभे राहणे आहे. हे पुरस्कार गेल्या १२ वर्षांपासून तामिळनाडू, गुजरात, पश्चिम बंगाल, राजस्थान, उत्तराखंड आणि इतर राज्यांमध्ये दिले जात आहेत.<mark>आत्तापर्यंत 23 हून अधिक संस्थांना स्वातंत्र्यवीर सावरकर मंडळाकडून पुरस्कार मिळाले आहेत. राष्ट्रीय पुरस्काराची रक्कम रु. १ लाख. आणि Rajaya Stariya पुरस्काराची रक्कम रु. 51,000/-</mark></p></li> 
+                    <li><p>ठाकूर पिंपरी गावातील ग्रामविकास प्रकल्प - ग्रामीण युवक, महिला आणि शेतकरी यांच्यासाठी विविध शैक्षणिक आणि सांस्कृतिक उपक्रम राबवले जात असले तरी अशा प्रकल्पाचा ग्रामीण लोकसंख्येवर लक्षणीय परिणाम झाला आहे. संगणक साक्षरता प्रशिक्षण, शेतकऱ्यांसाठी व्यावसायिक प्रशिक्षण क्षमता निर्माण कार्यक्रम, मुलांसाठी Activity Club (संस्कार वर्ग) इत्यादी नियमित उपक्रम आहेत आणि गावातील आणि जवळपासच्या परिसरातील 500 हून अधिक लोकसंख्येला याचा लाभ होतो.</p></li></ul>
+            </div>
+            <div class="scroll-container">
+                <img src="IMG-20191227-WA0020.jpg" alt="I_img" width="400" height="400">
+                <img src="IMG-20191227-WA0018.jpg" alt="M_img" width="400" height="400">
+                <img src="ATHARV.jpg" alt="A1_img" width="400" height="400">
+                <img src="ATHARV2.jpg" alt="A2_img" width="400" height="400">
+              </div>
+          </section>
+          <section id="department5">   
+            <div class="department5">
+                <h3>5.संकृती संवर्धन आणि विकास महासंघ</h3>
+                <p>ही शाखा आपल्या परंपरा तरुणांच्या आणि मोठ्या प्रमाणावर नागरिकांच्या मनात जपण्याचे काम करत आहे. 'आपल्या सांस्कृतिक प्रथांच्या संवर्धनातून सामाजिक विकास होणे हे महत्त्वाचे आहे' या उपक्रमाचे ब्रीदवाक्य. या विभागांतर्गत पिंपरी चिंचवडमध्ये सामूहिक उत्सव साजरे करणे, आपले सण पर्यावरणपूरक पद्धतीने साजरे करणे, पंढरपूर वारीच्या यात्रेकरूंची सेवा, निर्मल वारी उपक्रमाअंतर्गत कार्यातून योगदान, भजन स्पर्धा असे कार्यक्रम पिंपरी चिंचवडमध्ये आयोजित केले जातात. हिंदू नववर्ष स्वागत मार्च हा संस्थेद्वारे आयोजित केलेला एक अनोखा उपक्रम आहे. हे उपक्रम प्रामुख्याने समाजात आपल्या राष्ट्राप्रती आध्यात्मिक आत्मीयतेची भावना वाढवण्याच्या उद्देशाने चालवले जातात.</p>
+            </div>
+            <div class="scroll-container">
+                <img src="Nav varsha swagat (2).jpg" alt="NVS1_img" width="400" height="400">
+                <img src="Nav varsha swagat.jpg" alt="NVS2_img" width="400" height="400">
+                <img src="IMG-20191227-WA0011.jpg" alt="G_img" width="400" height="400">
+                <img src="SUKT.jpg" alt="S_img" width="400" height="400">
+              </div>
+          </section>
+          <section id="department6"> 
+            <div class="department6">
+                <h3>6.शैक्षणिक विभाग</h3>
+                <p>नागरिकांमध्ये राष्ट्रीय भावना जागृत करण्याच्या आणि सशस्त्र दलात करिअर करण्याची इच्छा असलेल्या तरुण इच्छूकांची ही गरज पूर्ण करण्यासाठी, स्वातंत्र्यवीर सावरकर मंडळाने सन 2017 पासून N.D.A प्रवेश परीक्षेसाठी कोचिंग सेंटर सुरू केले आहे.</p>
+
+                <p>स्वातंत्र्यवीर सावरकर मंडळाच्या सुविधा:</p> 
+                <ul><li><p>20000 चौरस फूट क्षेत्रफळात पसरलेल्या आधुनिक पायाभूत सुविधा.</p></li> 
+                    <li><p>वातानुकूलित वर्गखोल्या.</p></li> 
+                    <li><p>ऑडिओ व्हिडिओ सुसज्ज वर्गखोल्या.</p></li> 
+                    <li><p>लायब्ररीचा संपूर्ण विभाग स्पर्धात्मक परीक्षा अभ्यास साहित्य आणि अभ्यास कक्षासाठी समर्पित आहे.</p></li> 
+                    <li><p>ब्रिगेडियर बलजीतसिंग गिल आणि ब्रिगेडियर हेमंत महाजन माजी SSB निवड समिती सदस्य यांसारख्या साधनसंपन्न आणि अनुभवी तज्ञांकडून प्रशिक्षण.</p></li></ul>
+                    
+                    <p>(स्पर्धा परीक्षा शाखा)</p>
+                    
+                   <p>NDA प्रवेश आणि SSB (स्पर्धा परीक्षा) पूर्वतयारी अभ्यासक्रम हा पिंपरी-चिंचवड भागातील सर्वात कमी शुल्कासह एक प्रमुख कार्यक्रम आहे. अशा प्रकल्पाद्वारे 120 हून अधिक पात्र विद्यार्थ्यांना लाभ मिळाला आहे.<mark>आमच्या बॅचमधून NDA मध्ये दोन विद्यार्थ्यांची निवड ही अशा प्रकल्पाची मोठी उपलब्धी आहे. त्यांची नावे आहेत (1) साहिल बिर्जे-NDA आणि (2) आनंद जाधव-TES</mark></p>
+            </div>
+            <div class="scroll-container">
+                <img src="IMG-20190414-WA0030.jpg" alt="30_img" width="400" height="400">
+                <img src="nda 2.JPG" alt="NDA_img" width="400" height="400">
+                <img src="IMG-20190404-WA0016.jpg" alt="16_img" width="400" height="400">
+                <img src="IMG_5418.JPG" alt="5418_img" width="400" height="400">
+              </div>
+          </section>
+        <section id="our mission">
+            <h3 style="color: orange;">आमचे ध्येय</h3>
+        <ul><li><p>भारताचे निष्ठावान आणि जबाबदार नागरिक तयार करण्यात मदत करणे.</p></li>
+
+            <li><p>पिंपरी चिंचवड परिसरात राहणाऱ्या नागरिकांमध्ये भारतातील महत्त्वाच्या सामाजिक-राष्ट्रीय समस्यांबद्दल जागरूकता निर्माण करणे ज्यावर ते त्यांच्या स्वयंप्रेरणेने योगदान देऊ शकतात.
+                
+            <li><p>वेगवेगळ्या व्यक्तिमत्त्व निर्मिती उपक्रमांद्वारे मुलांसाठी स्वयं-विकासाचे सर्वोत्तम व्यासपीठ तयार करणे.</p></li>
+                
+            <li><p>प्राधिकरण आणि पिंपरी चिंचवडमधील मुलांमध्ये आणि नागरिकांमध्ये वाचन आणि अभ्यासाच्या सवयी विकसित करणे आणि वाढवणे, आणि लोकांसाठी अभ्यास कक्ष तसेच ग्रंथालय सेवांचा लाभ देणे.</p></li>
+                
+            <li><p>महिला कल्याणासाठी ज्ञान आणि सांस्कृतिक पूल तयार करणे.</p></li>
+                
+            <li><p>सक्रिय स्वयंसेवी असाइनमेंटद्वारे आमच्या पर्यावरणाचे रक्षण करणे.</p></li>
+                
+            <li><p>तरुणांमध्ये सैन्यीकरणाला प्रोत्साहन देणे.</p></li>
+                
+            <li><p>समाजात विविध कल्याणकारी उपक्रम आयोजित करून विविध सामाजिक-धार्मिक गट आणि आध्यात्मिक गटांचे प्रतिनिधित्व करणाऱ्या सर्व लोकांना एकत्रित आणणे.</p></li></ul>
+        </section>
+
+        <section id="contact">
+            <h3 style="color: orange;">संपर्क साधा</h3>
+            <ul><li><p class="a">श्री. के.विश्वनाथ नायर (अध्यक्ष)-</p></li>
+                <li><p class="a">श्री. रमेश बनगोंडे (कार्याध्यक्ष)-</p></li>
+                <li><p class="a">श्री. सागर पाटील (सचिव)-</p></li>
+                <li><p class="a">श्री. राजेंद्र देशपांडे (सहसाचिव)-</p></li>
+                <li><p class="a">श्री. राजेंद्र त्र्यंबके (कोषाध्यक्ष)-</p></li></ul>
+
             </ul>
-        </nav>
-
-        <section id="about" style="margin: 50px 0;">
-            <h2>आमच्याबद्दल</h2>
-            <p>Here you can provide general information about the NGO.</p>
         </section>
+    </div>
+    <div class="footer">
+        <h3 style="color: black;">स्वातंत्र्यवीर सावरकर मंडळ</h3> 
+        <p style="color: black;">पेठ क्रमांक. 25, निगडी, पुणे 411044</p>
+        <h3 style="color: black;">कार्यकर्णी सदस्य</h3>
 
-        <section id="projects" style="margin: 50px 0;">
-            <h2>आमचे प्रकल्प</h2>
-            <div class="project" style="margin: 20px 0;">
-                <h3>प्रकल्प 1</h3>
-                <p>Details about project 1.</p>
-            </div>
-            <div class="project" style="margin: 20px 0;">
-                <h3>प्रकल्प 2</h3>
-                <p>Details about project 2.</p>
-            </div>
-            <div class="project" style="margin: 20px 0;">
-                <h3>प्रकल्प 3</h3>
-                <p>Details about project 3.</p>
-            </div>
-            <div class="project" style="margin: 20px 0;">
-                <h3>प्रकल्प 4</h3>
-                <p>Details about project 4.</p>
-            </div>
-        </section>
+<div class="row">
+  <div class="column" style="background-color: orange;">
+    <p style="color: black;">श्री. भास्कर रिकामे</p>
+    <p style="color: black;">श्री. प्रदीप पाटील</p>
+    <p style="color: black;">सौ. अश्विनी अनंतपुरे</p>
+    <p style="color: black;">सौ. वैदेही पटवर्धन</p>
+    <p style="color: black;">श्री. श्रीराम रानडे</p>
+  </div>
+  <div class="column" style="background-color:orange;">
+    <p style="color: black;">श्री. विकास देशपांडे</p>
+    <p style="color: black;">श्री. शिवानंद चौगुले</p>
+    <p style="color: black;">श्री. मुकुंद कुलकर्णी</p>
+    <p style="color: black;">श्री. रविकांत कळंबकर</p>
+    <p style="color: black;">श्री. माहेश्वर मराठे</p>
+  </div>
+ </div>
+</div>
 
-        <section id="departments" style="margin: 50px 0;">
-            <h2>आमचे विभाग</h2>
-            <div class="department" style="margin: 20px 0;">
-                <h3>विभाग 1</h3>
-                <p>Details about department 1.</p>
-            </div>
-            <div class="department" style="margin: 20px 0;">
-                <h3>विभाग 2</h3>
-                <p>Details about department 2.</p>
-            </div>
-            <div class="department" style="margin: 20px 0;">
-                <h3>विभाग 3</h3>
-                <p>Details about department 3.</p>
-            </div>
-            <div class="department" style="margin: 20px 0;">
-                <h3>विभाग 4</h3>
-                <p>Details about department 4.</p>
-            </div>
-        </section>
-
-        <section id="contact" style="margin: 50px 0;">
-            <h2>संपर्क साधा</h2>
-            <p>Contact Number: 1234567890</p>
-        </section>
-    </main>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    
+    // Scroll to section when a link is clicked
+    var links = document.querySelectorAll('.topnav a');
+    links.forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        var target = this.getAttribute('href');
+        var section = document.querySelector(target);
+        if (section) {
+          event.preventDefault();
+          window.scrollTo({
+            top: section.offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    </script>
+    </main> 
+    <script>
+      // When the user scrolls the page, execute myFunction 
+      window.onscroll = function() {myFunction()};
+      
+      function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+      </script>  
     <script src="script.js"></script>
 </body>
 </html>
-
-     
